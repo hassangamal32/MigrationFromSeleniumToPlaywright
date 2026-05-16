@@ -1,0 +1,43 @@
+{
+  "name": "eshop-playwright-framework",
+  "version": "1.0.0",
+  "description": "eShop Automation Framework - Migrated from Selenium to Playwright",
+  "type": "module",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:ui": "playwright test --ui",
+    "report": "playwright show-report",
+    "report:allure": "allure open",
+    "allure:generate": "allure generate allure-results --clean -o allure-report",
+    "allure:report": "npm run allure:generate && npm run report:allure",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix",
+    "type-check": "tsc --noEmit"
+  },
+  "keywords": [
+    "playwright",
+    "automation",
+    "testing",
+    "e2e",
+    "eshop",
+    "vodafone"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.1",
+    "@types/node": "^20.10.6",
+    "@typescript-eslint/eslint-plugin": "^6.17.0",
+    "@typescript-eslint/parser": "^6.17.0",
+    "allure-playwright": "^2.13.0",
+    "eslint": "^8.56.0",
+    "prettier": "^3.1.1",
+    "typescript": "^5.3.3",
+    "xlsx": "^0.18.5"
+  }
+}

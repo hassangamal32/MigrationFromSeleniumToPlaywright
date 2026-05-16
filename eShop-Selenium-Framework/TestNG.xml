@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="eShop Automation">
+    <listeners>
+        <listener class-name="com.vodafone.vodafone_eshop_taf.utilities.listeners.TestNGListener"/>
+        <listener class-name="com.vodafone.vodafone_eshop_taf.utilities.listeners.AllureReportListener"/>
+    </listeners>
+    <test name="EshopAutomationReport">
+        <classes>
+            <class name="com.vodafone.vodafone_eshop_taf.utilities.extent_report.ExtentReport"/>
+            <class name="com.vodafone.vodafone_eshop_taf.pages.PageBase"/>
+            <class name="com.vodafone.vodafone_eshop_taf.TestRunner"></class>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,18 @@
+# Default ignored files
+#/.idea/workspace.xml
+target/
+
+.idea/eshop_automation.iml
+resources/config/config-rateplan.properties
+resources/reports
+allure-results/
+allure-report/
+**.DS_Store
+.idea/eShop-Framework.iml
+
+.idea
+output/
+output/ reports/**
+
+**.html
+**.7z
